@@ -57,3 +57,7 @@
 
 - 하드웨어 구성도
  <img width="706" height="454" alt="image" src="https://github.com/user-attachments/assets/204c05eb-3459-4bd5-a616-f1a85e0a6fc4" />
+
+ - 시스템 구성도
+    <img width="375" height="455" alt="image" src="https://github.com/user-attachments/assets/dc7cc60b-2ca1-4813-83ef-d659a8da5e84" />
+
