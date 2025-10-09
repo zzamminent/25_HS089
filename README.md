@@ -63,3 +63,10 @@
    
     <img width="375" height="455" alt="image" src="https://github.com/user-attachments/assets/dc7cc60b-2ca1-4813-83ef-d659a8da5e84" />
 
+
+
+
+---
+## **💡3. 작품 소개영상**
+
+[![한이음 공모전 영상 이름](유튜브 썸네일)](유튜브 링크)
