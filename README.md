@@ -1,24 +1,35 @@
-![header](https://capsule-render.vercel.app/api?type=venom&color=auto&height=300&section=header&text=👟2025년%20한이음%20드림업%20공모전%20G-WALK%20프로젝트&fontSize=70)
+<p align="center" style="margin-top:20px; margin-bottom:20px;">
+  <img src="https://capsule-render.vercel.app/api?type=Blur&color=0:ec4899,100:8b5cf6&height=300&section=header&text=👟G-WALK%20프로젝트&fontSize=70&fontColor=000000&stroke=ec4899&strokeWidth=2&animation=fadeIn" alt="G-WALK Header" />
+</p>
 
+<p align="center">
+  <img width="824" height="152" alt="image" src="https://github.com/user-attachments/assets/dc0c9dfa-9cad-4a47-aba9-722381430ca3" />
+</p>
 
+<div align="center">
 
-<img width="739" height="217" alt="image" src="https://github.com/user-attachments/assets/13ecd125-8eb8-4b59-9bbb-6890d09208cf" />
+👋 안녕하세요, 혁신을 사랑하는 여러분! 🌟  
+<br><br>
+우리는 <b>런웨이팀</b>, 세상을 따뜻하게 바꾸는 <b>스마트 신발 개발자팀</b>입니다. 👣💡  
+<br><br>
+우리의 프로젝트는 단순한 기술이 아닌,<br>
+<b>치매 어르신의 안전한 일상과 가족의 안심을 지켜주는 따뜻한 발걸음</b>입니다. 🧓❤️  
+<br><br>
+라즈베리파이와 BLE 비콘, 카메라, 편리한 게시보드를 통해<br>
+어르신의 이동을 감지하고, 실시간 알림으로 보호자에게 알려주는 스마트 시스템을 구축하고 있습니다.<br>
+복잡한 기술 속에서도 궁극적인 목표는 단 하나,<br>
+<b>“누구나 잃어버리지 않는 일상”</b>을 만드는 것입니다. 🌍💫  
+<br><br>
+우리는 사람과 기술이 만나는 지점에서<br>
+안전, 배려, 그리고 한 걸음이 누군가에겐 큰 희망이 됩니다. 💖👟  
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Courgette&duration=3000&pause=1000&width=435&lines=Team+Runway)](https://git.io/typing-svg)
+</div>
 
-👋 안녕하세요, 혁신을 사랑하는 여러분! 🌟
-
-우리는 런웨이팀, 세상을 따뜻하게 바꾸는 스마트 신발 개발자팀입니다. 👣💡
-
-우리의 프로젝트는 단순한 기술이 아닌, 치매 어르신의 안전한 일상과 가족의 안심을 지켜주는 따뜻한 발걸음입니다. 🧓❤️
-
-라즈베리파이와 BLE 비콘, 카메라, 편리한 게시보드를 통해
-어르신의 이동을 감지하고, 실시간 알림으로 보호자에게 알려주는 스마트 시스템을 구축하고 있습니다.
-복잡한 기술 속에서도 궁극적인 목표는 단 하나,
-“누구나 잃어버리지 않는 일상”을 만드는 것입니다. 🌍💫
-
-우리는 사람과 기술이 만나는 지점에서
-안전, 배려, 그리고 한 걸음이 누군가에겐 큰 희망이 됩니다. 💖👟
+<p align="right">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Courgette&duration=3000&pause=1000&width=435&lines=Team+Runway" alt="Typing SVG" />
+  </a>
+</p>
 
 
 ---
