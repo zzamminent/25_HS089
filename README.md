@@ -49,3 +49,11 @@
  BLE 비콘 (ID, RSSI 기반 위치 추적)
  라즈베리파이 (센서 수집·처리·데이터 전송)
  SD카드 (운영 데이터 및 임시 저장)
+
+
+
+---
+## **💡2. 시스템 구성도**
+
+- 하드웨어 구성도
+ <img width="706" height="454" alt="image" src="https://github.com/user-attachments/assets/204c05eb-3459-4bd5-a616-f1a85e0a6fc4" />
