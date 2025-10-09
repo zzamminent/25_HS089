@@ -1,4 +1,5 @@
-![header](https://capsule-render.vercel.app/api?type=Venom&color=auto&height=300&section=header&text=👟2025년 한이음 드림업 공모전 G-WALK프로젝트%20render&fontSize=90)
+![header](https://capsule-render.vercel.app/api?type=venom&color=auto&height=300&section=header&text=👟2025년%20한이음%20드림업%20공모전%20G-WALK%20프로젝트&fontSize=70)
+
 
 
 <img width="739" height="217" alt="image" src="https://github.com/user-attachments/assets/13ecd125-8eb8-4b59-9bbb-6890d09208cf" />
