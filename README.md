@@ -1,5 +1,7 @@
 ## 💡치매 노인의 배회 방지를 위한 스마트 신발 'G Walk' 프로젝트 개요
 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Courgette&pause=1000&width=435&lines=Team+Runway)](https://git.io/typing-svg)
+
 (사진)
 
 **1-1. 프로젝트 소개**
