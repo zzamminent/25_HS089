@@ -1,4 +1,4 @@
-## 💡치매 노인의 배회 방지를 위한 스마트 신발 'G Walk' 프로젝트 개요
+![header](https://capsule-render.vercel.app/api?type=Venom&color=auto&height=300&section=header&text=👟2025년 한이음 드림업 공모전 G-WALK프로젝트%20render&fontSize=90)
 
 
 <img width="739" height="217" alt="image" src="https://github.com/user-attachments/assets/13ecd125-8eb8-4b59-9bbb-6890d09208cf" />
@@ -17,11 +17,11 @@
 “누구나 잃어버리지 않는 일상”을 만드는 것입니다. 🌍💫
 
 우리는 사람과 기술이 만나는 지점에서
-안전, 배려, 그리고 혁신의 발자국을 남기고 있습니다.
-이 여정에 함께해 주세요. 우리의 한 걸음이 누군가에겐 큰 희망이 됩니다. 💖👟
+안전, 배려, 그리고 한 걸음이 누군가에겐 큰 희망이 됩니다. 💖👟
 
 
-
+---
+## 💡치매 노인의 배회 방지를 위한 스마트 신발 'G Walk' 프로젝트 개요
 
 **1-1. 프로젝트 소개**
 - 프로젝트 명 : 치매 노인의 배회 방지를 위한 스마트 신발 'G Walk'
