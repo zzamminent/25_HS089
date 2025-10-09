@@ -1,8 +1,25 @@
 ## 💡치매 노인의 배회 방지를 위한 스마트 신발 'G Walk' 프로젝트 개요
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Courgette&pause=1000&width=435&lines=Team+Runway)](https://git.io/typing-svg)
 
-(사진)
+<img width="739" height="217" alt="image" src="https://github.com/user-attachments/assets/13ecd125-8eb8-4b59-9bbb-6890d09208cf" />
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Courgette&duration=3000&pause=1000&width=435&lines=Team+Runway)](https://git.io/typing-svg)
+
+👋 안녕하세요, 혁신을 사랑하는 여러분! 🌟
+
+우리는 런웨이팀, 세상을 따뜻하게 바꾸는 스마트 신발 개발자팀입니다. 👣💡
+
+우리의 프로젝트는 단순한 기술이 아닌, 치매 어르신의 안전한 일상과 가족의 안심을 지켜주는 따뜻한 발걸음입니다. 🧓❤️
+
+라즈베리파이와 BLE 비콘, 카메라, 편리한 게시보드를 통해
+어르신의 이동을 감지하고, 실시간 알림으로 보호자에게 알려주는 스마트 시스템을 구축하고 있습니다.
+복잡한 기술 속에서도 궁극적인 목표는 단 하나,
+“누구나 잃어버리지 않는 일상”을 만드는 것입니다. 🌍💫
+
+우리는 사람과 기술이 만나는 지점에서
+안전, 배려, 그리고 혁신의 발자국을 남기고 있습니다.
+이 여정에 함께해 주세요. 우리의 한 걸음이 누군가에겐 큰 희망이 됩니다. 💖👟
+
 
 **1-1. 프로젝트 소개**
 - 프로젝트 명 : 치매 노인의 배회 방지를 위한 스마트 신발 'G Walk'
