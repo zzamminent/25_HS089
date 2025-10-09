@@ -70,3 +70,175 @@
 ## **💡3. 작품 소개영상**
 
 [![한이음 공모전 영상 이름](유튜브 썸네일)](유튜브 링크)
+
+
+
+
+---
+## **💡4. 핵심 소스코드**
+
+["배회 방지 스마트 신발”의 제어용 사이드바 GUI 프로그램]
+- 라즈베리파이에 연결된 카메라, 비콘, 추적 기능, 메일 전송, 대시보드 등을
+버튼 하나로 시작·중지하거나 열 수 있는 제어 패널
+- 핑크톤의 작고 직관적인 UI로 만들어져, 사용자가 터미널 명령어 없이도 쉽게 스마트 신발 기능을 조작할 수 있다.
+  
+```Python
+# -*- coding: utf-8 -*-
+import os, threading, webbrowser, requests
+import customtkinter as ctk
+from PIL import Image
+
+# ==== 라즈베리 에이전트 ====
+PI_HOST = "192.168.218.225"
+PI_PORT = 8088
+TOKEN   = "change-me-please"
+API_BASE = f"http://{PI_HOST}:{PI_PORT}"
+DASH_URL = f"http://{PI_HOST}:5000/dashboard"
+
+# ==== 사이즈/스타일 (핑크 & 살짝 키움) ====
+APP_W, APP_H = 84, 460          # 창 크기 (조금 더 크게)
+BAR_W        = 66               # 사이드바 폭
+BTN_SIZE     = 44               # 원형 버튼 크기
+BTN_RADIUS   = BTN_SIZE // 2
+ICON_FONT    = ("Segoe UI Emoji", 20, "bold")
+HINT_FONT    = ("Segoe UI", 12, "bold")
+
+# 컬러 (핑크 톤)
+COLOR_MAIN   = "#ec4899"        # 메인 핑크
+COLOR_HOVER  = "#db2777"        # 호버 핑크
+BG_APP       = "#fff1f5"        # 아주 연한 핑크 배경
+
+# ==== 로고 이미지 ====
+HERE = os.path.dirname(os.path.abspath(__file__))
+LOGO_PATH = os.path.join(HERE, "logo.png")   # 같은 폴더의 logo.png
+LOGO_SIZE = 50                               # 로고 크기 (조금 키움)
+
+def api_post(action):
+    try:
+        r = requests.post(
+            f"{API_BASE}/run",
+            json={"action": action},
+            headers={"X-Token": TOKEN},
+            timeout=10
+        )
+        return r.status_code, r.json()
+    except Exception as e:
+        return 0, {"ok": False, "error": str(e)}
+
+def api_post_try(actions):
+    for act in actions:
+        code, res = api_post(act)
+        if code != 400 or res.get("error") != "unknown action":
+            return code, res
+    return code, res
+
+class CompactSidebar(ctk.CTk):
+    def __init__(self):
+        super().__init__()
+        self.title("SmartShoe Mini")
+        self.geometry(f"{APP_W}x{APP_H}")
+        self.resizable(False, False)
+        ctk.set_appearance_mode("light")
+        self.configure(fg_color=BG_APP)
+
+        # 사이드바
+        bar = ctk.CTkFrame(self, fg_color="white", corner_radius=24, width=BAR_W)
+        bar.pack(side="left", fill="y", padx=8, pady=12)
+
+        # 상단 로고 (가운데 정렬)
+        self._add_logo(bar)
+
+        # 공용 토스트 라벨
+        self.toast = ctk.CTkLabel(
+            self, text="", fg_color="white", text_color=COLOR_MAIN,
+            corner_radius=12, font=HINT_FONT, padx=8, pady=4
+        )
+        self.toast.place_forget()
+
+        # 원형 버튼들
+        self._add_btn(bar, "📷", "카메라",   key="camera")
+        self._add_btn(bar, "📡", "비콘",     key="beacon")
+        self._add_btn(bar, "📍", "비콘 추적", key="track",
+                      start_actions=("track_start", "beacon_start"),
+                      stop_actions=("track_stop",  "beacon_stop"))
+        self._add_btn(bar, "📊", "대시보드 (Ctrl+클릭=열기)", key="dash",
+                      open_on_ctrl=True)
+        self._add_btn(bar, "✉️", "메일 테스트", key="mail", oneshot=True)
+
+    # ---------------- UI ----------------
+    def _add_logo(self, parent):
+        holder = ctk.CTkFrame(parent, fg_color="transparent")
+        holder.pack(pady=(6, 12))
+        try:
+            img = Image.open(LOGO_PATH).convert("RGBA")
+            img = img.resize((LOGO_SIZE, LOGO_SIZE), Image.LANCZOS)
+            cimg = ctk.CTkImage(light_image=img, dark_image=img, size=(LOGO_SIZE, LOGO_SIZE))
+            ctk.CTkLabel(holder, image=cimg, text="").pack()
+            holder._cimg = cimg  # GC 방지
+        except Exception:
+            ctk.CTkLabel(holder, text="🌸", font=("Segoe UI Emoji", 22)).pack()
+
+    def _add_btn(self, parent, icon, tooltip, key,
+                 oneshot=False, open_on_ctrl=False,
+                 start_actions=None, stop_actions=None):
+        btn = ctk.CTkButton(
+            parent, text=icon, font=ICON_FONT,
+            width=BTN_SIZE, height=BTN_SIZE, corner_radius=BTN_RADIUS,
+            fg_color=COLOR_MAIN, hover_color=COLOR_HOVER,
+            text_color="white", command=lambda: None
+        )
+        btn.pack(pady=10)
+
+        def left_click(evt=None):
+            if open_on_ctrl and evt and (evt.state & 0x0004):
+                webbrowser.open(DASH_URL); self._toast("대시보드 열기"); return
+            if oneshot:
+                self._run("mail_test", toast="메일 전송 요청")
+            else:
+                if start_actions:
+                    self._run_multi(start_actions, toast=f"{tooltip} 시작")
+                else:
+                    self._run(f"{key}_start", toast=f"{tooltip} 시작")
+
+        def right_click(evt=None):
+            if not oneshot:
+                if stop_actions:
+                    self._run_multi(stop_actions, toast=f"{tooltip} 중지")
+                else:
+                    self._run(f"{key}_stop", toast=f"{tooltip} 중지")
+
+        def on_enter(evt=None):
+            by = btn.winfo_rooty() - self.winfo_rooty()
+            self.toast.configure(text=tooltip)
+            self.toast.place(x=APP_W-2, y=by-2)
+
+        btn.bind("<Button-1>", left_click)
+        btn.bind("<Button-3>", right_click)
+        btn.bind("<Enter>", on_enter)
+        btn.bind("<Leave>", lambda e: self.toast.place_forget())
+
+    # ---------------- 동작 ----------------
+    def _run(self, action, toast=None):
+        def worker():
+            code, res = api_post(action)
+            print(action, "→", code, res)
+        threading.Thread(target=worker, daemon=True).start()
+        if toast: self._toast(toast)
+
+    def _run_multi(self, actions, toast=None):
+        def worker():
+            code, res = api_post_try(actions)
+            print(actions, "→", code, res)
+        threading.Thread(target=worker, daemon=True).start()
+        if toast: self._toast(toast)
+
+    def _toast(self, text, ms=1200):
+        self.toast.configure(text=text)
+        if not self.toast.winfo_ismapped():
+            self.toast.place(x=APP_W-2, y=12)
+        self.after(ms, lambda: self.toast.place_forget())
+
+if __name__ == "__main__":
+    CompactSidebar().mainloop()
+```
+
