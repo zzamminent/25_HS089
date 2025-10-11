@@ -341,4 +341,7 @@ class CompactSidebar(ctk.CTk):
 if __name__ == "__main__":
     CompactSidebar().mainloop()
 ```
+<img width="1001" height="346" alt="image" src="https://github.com/user-attachments/assets/ecd21430-3635-450a-a933-0e3d5752f8c6" />
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Courgette&duration=3000&pause=1000&width=435&lines=THANK+YOU)](https://git.io/typing-svg)
 
