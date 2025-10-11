@@ -111,7 +111,7 @@
 | <img width="80" height="100" src="https://github.com/user-attachments/assets/ab73bb1c-c1d4-464d-8ad3-635b45d5a8ae" > | <img width="80" height="100" alt="image" src="https://github.com/user-attachments/assets/c7f66b7c-ab84-41fa-8fba-b49dba28b677" > | <img width="80" height="100" alt="image" src="https://github.com/user-attachments/assets/c33252c7-3bf6-43cf-beaa-a9e2d9bd090b" > | <img width="80" height="100" alt="image" src="https://github.com/user-attachments/assets/0d5909f0-fc73-4ab9-be09-4d48e3e71083" > | <img width="80" height="100" alt="image" src="https://github.com/user-attachments/assets/c7f66b7c-ab84-41fa-8fba-b49dba28b677" > |
 |:---:|:---:|:---:|:---:|:---:|
 | **이유림** | **엄지수** | **이화연** | **이효빈** | **홍유민** |
-| • 개발총괄 <br> • 시스템 구조 설계 및 전체 일정 관리 | • 프론트엔드 개발 <br> • 사용자 인터뷰·요구사항 분석 | • 하드웨어 및 카메라 제어 담당 <br> • 시각자료 제작 |• 디자인 총괄 <br> • 데이터 전송 및 이메일 알림 모듈 개발 | • 백엔드 개발 (Flask 서버) <br> • 시연 담당 |
+| • 프로젝트총괄 <br> • 시스템 구조 설계 및 기능 통합 조정 | • 프론트엔드 개발 <br> • 사용자 인터뷰·요구사항 분석 | • 하드웨어 및 카메라 제어 담당 <br> • 시각자료 제작 |• 디자인 총괄 <br> • 데이터 전송 및 이메일 알림 모듈 개발 | • 백엔드 개발 (Flask 서버) <br> • 시연 담당 |
 
 ---
 
