@@ -168,7 +168,8 @@ MySQL 데이터베이스 및 서비스(APU)를 통해
 
 ## **💡4. 작품 소개영상**
 
-[![한이음 공모전 영상 이름](유튜브 썸네일)](유튜브 링크)
+[![[런웨이팀] 2025년 한이음 드림업 시연 영상]<img width="285" height="141" alt="image" src="https://github.com/user-attachments/assets/a58cf6b6-da64-441e-8d63-ae4faf073015" />
+](https://youtu.be/g8zjtPP4zjw?si=IbRG2Qs_dzMdRROS)
 
 
 
