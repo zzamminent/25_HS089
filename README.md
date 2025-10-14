@@ -42,7 +42,8 @@
 - 프로젝트 명 : 치매 노인의 배회 방지를 위한 스마트 신발 'G Walk'
 - 프로젝트 정의 : 치매노인의 실종을 방지하기 위해서는 골든타임 확보가 필요하며 실시간 및 근거리 위치 추적을 구현하여 배회 초기에 배회자의 위치를 확보하는 시스템
   <br>
-  <img width="788" height="525" alt="image" src="https://github.com/user-attachments/assets/f7abad5a-463b-4cae-bd5d-fb23dec5eadf" />
+  <img width="1020" height="679" alt="image" src="https://github.com/user-attachments/assets/24aa710e-c1e9-40d3-854a-80d1900d9936" />
+
 
 <br><br>
 
