@@ -107,7 +107,7 @@
 | <img width="253" height="255" alt="image" src="https://github.com/user-attachments/assets/53c88d4d-bc0a-4709-8dab-27e133695699" /> | <img width="251" height="247" alt="image" src="https://github.com/user-attachments/assets/2df22743-5c44-4e10-bc31-a059124178fe" /> | <img width="258" height="255" alt="image" src="https://github.com/user-attachments/assets/f8975804-e9d9-495f-b1f7-234f71ab9a92" /> | <img width="258" height="258" alt="image" src="https://github.com/user-attachments/assets/f6b5e15e-186a-414b-a58f-8d053f550bcd" /> | <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/ce9b3026-499a-44c5-9e33-b526570c6931" /> |
 |:---:|:---:|:---:|:---:|:---:|
 | **이유림** | **엄지수** | **이화연** | **이효빈** | **홍유민** |
-| • 프로젝트 총괄 <br> • 시스템 구조 설계 및 기능 통합 조정 | • 프론트엔드 개발 <br> • 사용자 인터뷰·요구사항 분석 | • 하드웨어 및 카메라 제어 담당 <br> • 시각자료 제작 |• 디자인 총괄 <br> • 데이터 전송 및 이메일 알림 모듈 개발 | • 백엔드 개발 (Flask 서버) <br> • 시연 담당 |
+| • 프로젝트 총괄 <br> • 시스템 기능 통합 조정 및 시연 영상 제 | • 프론트엔드 개발 <br> • 사용자 인터뷰·요구사항 분석 | • 하드웨어 및 카메라 제어 담당 <br> • 시각자료 제작 |• 디자인 총괄 <br> • 데이터 전송 및 이메일 알림 모듈 개발 | • 백엔드 개발 (Flask 서버) <br> • 시연 담당 |
 
 ---
 
@@ -168,8 +168,9 @@ MySQL 데이터베이스 및 서비스(APU)를 통해
 
 ## **💡4. 작품 소개영상**
 
-[![[런웨이팀] 2025년 한이음 드림업 시연 영상]<img width="285" height="141" alt="image" src="https://github.com/user-attachments/assets/a58cf6b6-da64-441e-8d63-ae4faf073015" />
-](https://youtu.be/g8zjtPP4zjw?si=IbRG2Qs_dzMdRROS)
+[![[런웨이팀] 2025년 한이음 드림업 시연 영상]
+<br>
+<img width="285" height="141" alt="image" src="https://github.com/user-attachments/assets/a58cf6b6-da64-441e-8d63-ae4faf073015" />](https://youtu.be/g8zjtPP4zjw?si=IbRG2Qs_dzMdRROS)
 
 
 
